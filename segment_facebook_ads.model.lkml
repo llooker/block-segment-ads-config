@@ -12,13 +12,13 @@ datagroup: nightly {
 persist_with: nightly
 
 ## Google Adwords ##
-explore: ad_performance_reports_config {
-  extends: [ad_performance_reports_core]
+explore: adwords_ad_performance_reports_config {
+  extends: [adwords_ad_performance_reports_core]
   extension: required
 }
 
-explore: campaign_performance_reports_config {
-  extends: [campaign_performance_reports_config_core]
+explore: adwords_campaign_performance_reports_config {
+  extends: [adwords_campaign_performance_reports_core]
   extension: required
 }
 
@@ -34,7 +34,7 @@ explore: facebook_insights_config {
 }
 
 ## Facebook Ads and Google Adwords Comparison ##
-explore: ads_compare_config {
-  extends: [ads_compare_core]
+explore: combined_ads_compare_config {
+  extends: [combined_ads_compare_core]
   extension: required
 }
