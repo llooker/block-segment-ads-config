@@ -1,6 +1,3 @@
-#This should not be needed, right?
-connection: "pb_n_jays_postgres"
-
 include: "*.view"
 
 case_sensitive: no
@@ -10,6 +7,8 @@ datagroup: nightly {
 }
 
 persist_with: nightly
+
+# Explores hidden by default, add hidden: no to surface them in Explore Menu
 
 ## Google Adwords ##
 explore: adwords_ad_performance_reports_config {
